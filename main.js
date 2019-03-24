@@ -20,12 +20,6 @@ app.on('ready', () => {
     win.setMenu(null);
 
     win.webContents.openDevTools();
-   
-    win.on('close', (e) => {
-    
-        e.preventDefault();
-
-    })
 
     win.on('closed', () => {
         win = null;

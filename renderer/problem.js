@@ -23,7 +23,7 @@ setInterval(()=>{
 },1000)
 
 // 0-2 Easy Problems
-pEasy = Math.floor(Math.random() * 3);
+pEasy = Math.floor(Math.random() * 3) + 0;
 // 3-5 Medium Problems
 pMedium = Math.floor(Math.random() * 3) + 3;
 // 6-8 Medium Problems
@@ -115,7 +115,7 @@ document.querySelector('#get-input').addEventListener('click', () => {
 document.querySelector('#submit-output').addEventListener('click', () => {
     const submission = document.querySelector('#inputGroupFile02').files[0].path;
     if (document.querySelector('#inputGroupFile02').value != null) {
-        const outputPath = `data/o/${p[pNum]}.txt`;
+        const outputPath = path.join(appRootPath,`data/outputs/${p[pNum]}.txt`);
 
         let outBuf = fs.readFileSync(outputPath).toString().split(/(?:\r\n|\r|\n)/g);
         let subBuf = fs.readFileSync(submission).toString().split(/(?:\r\n|\r|\n)/g);
