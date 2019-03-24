@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Problem</title>
+    <link rel="stylesheet" href="../res/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="../res/stylesheets/style.css">
+</head>
+
+<body>
+    <div class="container p-3" style="max-width:900px">
+        <h2 id="name" class=" mb-4 mt-2" style="text-align:center"></h2>
+        <div class="alert alert-primary">
+            Difficulty : <span id="p-difficulty"></span>
+            <span style="float:right">Time Left : <span id="time-left"></span></span>
+          </div>
+        <div class="card text-white bg-primary mb-2" style="margin: auto;">
+            <div class="card-header">Problem Statement</div>
+            <div class="card-body">
+                <h4 class="card-title"></h4>
+                <p class="card-text" id="p-statement"></p>
+            </div>
+        </div>
+        <div class="card text-white bg-primary mb-2" style="margin: auto;">
+            <div class="card-header">Input Pattern</div>
+            <div class="card-body">
+                <h4 class="card-title"></h4>
+                <p class="card-text" id="p-input"></p>
+            </div>
+        </div>
+        <div class="card text-white bg-primary mb-2" style="margin: auto;">
+            <div class="card-header">Output Pattern</div>
+            <div class="card-body">
+                <h4 class="card-title"></h4>
+                <p class="card-text" id="p-output"></p>
+            </div>
+        </div>
+        <div class="card text-white bg-primary mb-2" style="margin: auto;">
+            <div class="card-header">Constraints</div>
+            <div class="card-body">
+                <h4 class="card-title"></h4>
+                <p class="card-text" id="p-constraints"></p>
+            </div>
+        </div>
+        <div class="d-flex p-1">
+            <div class="card text-white bg-primary mb-2 mr-1 w-50" style="flow:left !important">
+                <div class="card-header">Sample Input</div>
+                <div class="card-body">
+                    <h4 class="card-title"></h4>
+                    <p class="card-text" id="p-sample-input"></p>
+                </div>
+            </div>
+            <div class="card text-white bg-primary mb-2 ml-1 w-50" style="">
+                <div class="card-header">Sample Output</div>
+                <div class="card-body">
+                    <h4 class="card-title"></h4>
+                    <p class="card-text" id="p-sample-output"></p>
+                </div>
+            </div>
+        </div>
+        <div class="card text-white bg-primary mb-2" style="margin: auto;">
+            <div class="card-header">Explaination</div>
+            <div class="card-body">
+                <h4 class="card-title"></h4>
+                <p class="card-text" id="p-explaination"></p>
+            </div>
+        </div>
+        <div class="d-flex">
+            <button type="button" id="get-input" class="btn btn-primary m-2 w-25">Get Input</button>
+            <div class="form-group m-2 w-75">
+                <div class="input-group p-2">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" style="cursor:pointer" id="inputGroupFile02">
+                        <label class="custom-file-label" for="inputGroupFile02" id="lbl-output"
+                            style="cursor:pointer;overflow: hidden;">Choose Output file</label>
+                    </div>
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="submit-output" style="cursor:pointer" id="">Submit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <button type="button" id="p-prev" class="btn btn-primary m-2 w-25">Previous Problem</button>
+        <button type="button" id="p-next" class="btn btn-primary m-2 w-25" style="float:right">Next Problem</button>
+
+    </div>
+    <div class="alert alert-primary m-1" style="margin-bottom:-8px;font-size: 0.9rem;text-align: center">
+        Developed by Sarthak SG
+    </div>
+
+    <script src="../renderer/problem.js"></script>
+
+</body>
+
+</html>
